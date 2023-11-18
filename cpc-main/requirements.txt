@@ -1,0 +1,8 @@
+transformers
+huggingface_hub
+hydra-core
+pyJoules
+datasets
+tqdm
+torch
+pynvml
