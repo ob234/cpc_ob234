@@ -50,3 +50,11 @@ python calc_emission_inference.py -device "cuda" -interface "manually-just-data"
 python calc_emission_inference.py -device "cuda" -interface "manually-just-inference" -task_type "fill-mask" 
 
 python calc_emission_inference.py -device "cuda" -interface "manually-just-inference-extract" -task_type "fill-mask" 
+
+
+---- 
+
+sudo apt-get upgrade 
+sudo apt-get update 
+sudo apt install python3-pip
+pip install -r requirements.txt 

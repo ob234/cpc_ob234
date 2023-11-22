@@ -6,3 +6,5 @@ datasets
 tqdm
 torch
 pynvml
+argparse
+huggingface-hub
