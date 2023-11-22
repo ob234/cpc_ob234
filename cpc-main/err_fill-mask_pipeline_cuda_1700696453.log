@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 214, in <module>
+    main()
+  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 176, in main
+    pipe = load_pipeline(task=task_type, model=model_name, tokenizer=tokenizer, device=device)
+  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 20, in load_pipeline
+    pipe = pipeline(task=task, model=model, tokenizer=tokenizer, device=device)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/__init__.py", line 870, in pipeline
+    framework, model = infer_framework_load_model(
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 269, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 566, in from_pretrained
+    return model_class.from_pretrained(
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3236, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 1046, in __init__
+    self.roberta = XLMRobertaModel(config, add_pooling_layer=False)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 705, in __init__
+    self.embeddings = XLMRobertaEmbeddings(config)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 74, in __init__
+    self.word_embeddings = nn.Embedding(config.vocab_size, config.hidden_size, padding_idx=config.pad_token_id)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 144, in __init__
+    self.reset_parameters()
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 153, in reset_parameters
+    init.normal_(self.weight)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/init.py", line 155, in normal_
+    return _no_grad_normal_(tensor, mean, std)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/init.py", line 19, in _no_grad_normal_
+    return tensor.normal_(mean, std)
+KeyboardInterrupt

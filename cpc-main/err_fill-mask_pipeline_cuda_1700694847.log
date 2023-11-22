@@ -1,0 +1,43 @@
+model.safetensors:   0%|          | 0.00/2.24G [00:00<?, ?B/s]model.safetensors:   0%|          | 10.5M/2.24G [00:00<02:47, 13.4MB/s]model.safetensors:   1%|          | 21.0M/2.24G [00:01<01:45, 21.1MB/s]model.safetensors:   1%|▏         | 31.5M/2.24G [00:01<01:25, 25.9MB/s]model.safetensors:   2%|▏         | 41.9M/2.24G [00:01<01:15, 29.2MB/s]model.safetensors:   2%|▏         | 52.4M/2.24G [00:01<01:09, 31.4MB/s]model.safetensors:   3%|▎         | 62.9M/2.24G [00:02<01:06, 32.9MB/s]model.safetensors:   3%|▎         | 73.4M/2.24G [00:02<01:03, 33.9MB/s]model.safetensors:   4%|▎         | 83.9M/2.24G [00:02<01:02, 34.6MB/s]model.safetensors:   4%|▍         | 94.4M/2.24G [00:03<01:01, 35.1MB/s]model.safetensors:   5%|▍         | 105M/2.24G [00:03<01:00, 35.3MB/s] model.safetensors:   5%|▌         | 115M/2.24G [00:03<00:59, 35.5MB/s]model.safetensors:   6%|▌         | 126M/2.24G [00:03<00:59, 35.7MB/s]model.safetensors:   6%|▌         | 136M/2.24G [00:04<00:58, 35.8MB/s]model.safetensors:   7%|▋         | 147M/2.24G [00:04<00:58, 35.8MB/s]model.safetensors:   7%|▋         | 157M/2.24G [00:04<00:58, 35.9MB/s]model.safetensors:   7%|▋         | 168M/2.24G [00:05<00:57, 35.9MB/s]model.safetensors:   8%|▊         | 178M/2.24G [00:05<00:57, 36.0MB/s]model.safetensors:   8%|▊         | 189M/2.24G [00:05<00:57, 35.9MB/s]model.safetensors:   9%|▉         | 199M/2.24G [00:06<00:56, 36.0MB/s]model.safetensors:   9%|▉         | 210M/2.24G [00:06<00:57, 35.7MB/s]model.safetensors:  10%|▉         | 220M/2.24G [00:06<00:56, 35.6MB/s]model.safetensors:  10%|█         | 231M/2.24G [00:06<00:56, 35.8MB/s]model.safetensors:  11%|█         | 241M/2.24G [00:07<00:55, 35.8MB/s]model.safetensors:  11%|█         | 252M/2.24G [00:07<00:55, 36.0MB/s]model.safetensors:  12%|█▏        | 262M/2.24G [00:07<00:54, 36.1MB/s]model.safetensors:  12%|█▏        | 273M/2.24G [00:08<00:54, 36.1MB/s]model.safetensors:  13%|█▎        | 283M/2.24G [00:08<00:54, 36.2MB/s]model.safetensors:  13%|█▎        | 294M/2.24G [00:08<00:53, 36.2MB/s]model.safetensors:  14%|█▎        | 304M/2.24G [00:08<00:53, 36.2MB/s]model.safetensors:  14%|█▍        | 315M/2.24G [00:09<00:53, 36.2MB/s]model.safetensors:  14%|█▍        | 325M/2.24G [00:09<00:53, 36.2MB/s]model.safetensors:  15%|█▍        | 336M/2.24G [00:09<00:52, 36.2MB/s]model.safetensors:  15%|█▌        | 346M/2.24G [00:10<00:52, 36.2MB/s]model.safetensors:  16%|█▌        | 357M/2.24G [00:10<00:52, 36.3MB/s]model.safetensors:  16%|█▋        | 367M/2.24G [00:10<00:51, 36.2MB/s]model.safetensors:  17%|█▋        | 377M/2.24G [00:10<00:51, 36.3MB/s]model.safetensors:  17%|█▋        | 388M/2.24G [00:11<00:51, 36.2MB/s]model.safetensors:  18%|█▊        | 398M/2.24G [00:11<00:51, 36.1MB/s]model.safetensors:  18%|█▊        | 409M/2.24G [00:11<00:50, 36.2MB/s]model.safetensors:  19%|█▊        | 419M/2.24G [00:12<00:50, 36.2MB/s]model.safetensors:  19%|█▊        | 419M/2.24G [00:12<00:52, 34.5MB/s]
+Traceback (most recent call last):
+  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 214, in <module>
+    main()
+  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 176, in main
+    pipe = load_pipeline(task=task_type, model=model_name, tokenizer=tokenizer, device=device)
+  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 20, in load_pipeline
+    pipe = pipeline(task=task, model=model, tokenizer=tokenizer, device=device)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/__init__.py", line 870, in pipeline
+    framework, model = infer_framework_load_model(
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 269, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 566, in from_pretrained
+    return model_class.from_pretrained(
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3037, in from_pretrained
+    resolved_archive_file = cached_file(pretrained_model_name_or_path, filename, **cached_file_kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/utils/hub.py", line 430, in cached_file
+    resolved_file = hf_hub_download(
+  File "/users/ob234/.local/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1461, in hf_hub_download
+    http_get(
+  File "/users/ob234/.local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 541, in http_get
+    for chunk in r.iter_content(chunk_size=DOWNLOAD_CHUNK_SIZE):
+  File "/users/ob234/.local/lib/python3.10/site-packages/requests/models.py", line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/users/ob234/.local/lib/python3.10/site-packages/urllib3/response.py", line 934, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/users/ob234/.local/lib/python3.10/site-packages/urllib3/response.py", line 877, in read
+    data = self._raw_read(amt)
+  File "/users/ob234/.local/lib/python3.10/site-packages/urllib3/response.py", line 812, in _raw_read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "/users/ob234/.local/lib/python3.10/site-packages/urllib3/response.py", line 797, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "/usr/lib/python3.10/http/client.py", line 466, in read
+    s = self.fp.read(amt)
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.10/ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.10/ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
