@@ -1,0 +1,13 @@
+current_model: xlm-roberta-large, timestamp: 1700705577
+  0%|          | 0/10 [00:00<?, ?it/s] 70%|███████   | 7/10 [00:00<00:00, 64.21it/s]100%|██████████| 10/10 [00:00<00:00, 65.91it/s]
+current_model: bert-large-uncased, timestamp: 1700705583
+  0%|          | 0/10 [00:00<?, ?it/s] 70%|███████   | 7/10 [00:00<00:00, 67.78it/s]100%|██████████| 10/10 [00:00<00:00, 69.20it/s]
+current_model: roberta-base, timestamp: 1700705587
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 104.85it/s]
+current_model: bert-base-uncased, timestamp: 1700705590
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 115.39it/s]
+current_model: distilbert-base-uncased, timestamp: 1700705593
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 179.42it/s]
+current_model: albert-base-v2, timestamp: 1700705596
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 97.00it/s]100%|██████████| 10/10 [00:00<00:00, 96.89it/s]
+end experiment :)

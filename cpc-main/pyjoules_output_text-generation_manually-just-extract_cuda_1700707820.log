@@ -1,0 +1,10 @@
+begin timestamp : 1700707827.685612; tag : query_just_extract; duration : 0.003183603286743164; package_0 : 163795.0; package_1 : 182043.0; core_0 : 0.0; core_1 : 366.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.6894104; tag : query_just_extract; duration : 0.0006060600280761719; package_0 : 0.0; package_1 : 0.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.690554; tag : query_just_extract; duration : 0.0005824565887451172; package_0 : 55264.0; package_1 : 60803.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.6916711; tag : query_just_extract; duration : 0.0005707740783691406; package_0 : 55021.0; package_1 : 61078.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.6927752; tag : query_just_extract; duration : 0.0015244483947753906; package_0 : 110101.0; package_1 : 122095.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.6948328; tag : query_just_extract; duration : 0.0005898475646972656; package_0 : 55067.0; package_1 : 60223.0; core_0 : 0.0; core_1 : 336.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.695959; tag : query_just_extract; duration : 0.00057220458984375; package_0 : 55081.0; package_1 : 61322.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.697065; tag : query_just_extract; duration : 0.0005781650543212891; package_0 : 0.0; package_1 : 0.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.6981754; tag : query_just_extract; duration : 0.0005750656127929688; package_0 : 0.0; package_1 : 0.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 0
+begin timestamp : 1700707827.6992965; tag : query_just_extract; duration : 0.0005731582641601562; package_0 : 0.0; package_1 : 0.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 0

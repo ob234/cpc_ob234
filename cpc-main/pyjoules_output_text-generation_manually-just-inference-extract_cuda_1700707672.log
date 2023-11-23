@@ -1,0 +1,10 @@
+begin timestamp : 1700707679.348329; tag : query_just_inference_extract; duration : 0.1518383026123047; package_0 : 8261216.0; package_1 : 9521236.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 6812
+begin timestamp : 1700707679.5030925; tag : query_just_inference_extract; duration : 0.1528470516204834; package_0 : 8371653.0; package_1 : 9644857.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 6868
+begin timestamp : 1700707679.6590304; tag : query_just_inference_extract; duration : 0.14961767196655273; package_0 : 8148565.0; package_1 : 9393832.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 6878
+begin timestamp : 1700707679.8115702; tag : query_just_inference_extract; duration : 0.14817118644714355; package_0 : 8093179.0; package_1 : 9344030.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 6859
+begin timestamp : 1700707679.96261; tag : query_just_inference_extract; duration : 0.1533370018005371; package_0 : 8369836.0; package_1 : 9647573.0; core_0 : 122.0; core_1 : 0.0; nvidia_gpu_0 : 6832
+begin timestamp : 1700707680.1187484; tag : query_just_inference_extract; duration : 0.14800381660461426; package_0 : 8090585.0; package_1 : 9335379.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 6846
+begin timestamp : 1700707680.2696233; tag : query_just_inference_extract; duration : 0.1477665901184082; package_0 : 8094766.0; package_1 : 9333853.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 6828
+begin timestamp : 1700707680.4202213; tag : query_just_inference_extract; duration : 0.14770293235778809; package_0 : 8045696.0; package_1 : 9269754.0; core_0 : 488.0; core_1 : 1648.0; nvidia_gpu_0 : 6828
+begin timestamp : 1700707680.5707517; tag : query_just_inference_extract; duration : 0.14864206314086914; package_0 : 8103295.0; package_1 : 9491025.0; core_0 : 0.0; core_1 : 0.0; nvidia_gpu_0 : 6898
+begin timestamp : 1700707680.7222643; tag : query_just_inference_extract; duration : 0.15103840827941895; package_0 : 8266098.0; package_1 : 9588096.0; core_0 : 504.0; core_1 : 213.0; nvidia_gpu_0 : 6952

@@ -6,7 +6,7 @@ import subprocess
 import sys
 import time
 from time import sleep
-
+from tqdm import tqdm
 import torch
 from datasets import load_dataset
 from pyJoules.energy_meter import measure_energy
@@ -272,31 +272,32 @@ def main():
     #involves adding special tokens or modifying text, etc.
     first_input_data_proc = preprocessing_data(temp_input, task_type,
                                                model_name, tokenizer, device)
-    first_outputs_pre = perform_inference(model, task_type,
+    if interface != 'pipeline':
+        first_outputs_pre = perform_inference(model, task_type,
                                           first_input_data_proc)
 
     # ---------------- experiment ----------------
     # why is err_msg used for normal logging operations?
-    #err_msg = f"current_model: {model_name}, timestamp: {round(time.time())}\n"
-    #sys.stderr.write(err_msg)
+    err_msg = f"current_model: {model_name}, timestamp: {round(time.time())}\n"
+    sys.stderr.write(err_msg)
 
     # logger setup
-    log_filename = f"model_logs_{round(time.time())}.log"
-    logging.basicConfig(
-        level=logging.INFO,
-        format=
-        f"current_model: {model_name}, timestamp: {round(time.time())}\n",
-        handlers=[logging.FileHandler(log_filename),
-                  logging.StreamHandler()])
+    # log_filename = f"model_logs_{round(time.time())}.log"
+    # logging.basicConfig(
+    #     level=logging.INFO,
+    #     format=
+    #     f'current_model: {model_name}, timestamp: {round(time.time())}\n',
+    #     handlers=[logging.FileHandler(log_filename),
+    #               logging.StreamHandler()])
 
     # using logger instead of err_msg
     # is this correct?
-    logging.info(log_filename)
+    # logging.info(log_filename)
 
     # why sleep(2) instead of tester_handler?
     sleep(2)
 
-    for _i in range(10):
+    for _i in tqdm(range(10)):
       if interface == "manually-just-inference":
         query_just_inference(task_type, first_input_data_proc, model)
 
@@ -325,9 +326,9 @@ def main():
             #which is a high-level abstraction for performing inference tasks from HF library
             query(pipe, task_type, tokenizer, input_data, model_name)
 
-  #err_msg = "end experiment :)"
-  #sys.stderr.write(err_msg)
-  logging.info('end experiment :)')
+  err_msg = "end experiment :)"
+  sys.stderr.write(err_msg)
+  #logging.info('end experiment :)')
   subprocess.Popen("./nvkillprocess.sh", shell=True)
 
 

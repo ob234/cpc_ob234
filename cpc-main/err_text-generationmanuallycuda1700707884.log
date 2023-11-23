@@ -1,0 +1,15 @@
+current_model: gpt2, timestamp: 1700707890
+  0%|          | 0/10 [00:00<?, ?it/s]/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 35, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 32, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 37, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 51, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 34, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 30, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+ 10%|█         | 1/10 [02:08<19:18, 128.75s/it] 20%|██        | 2/10 [04:18<17:12, 129.08s/it] 30%|███       | 3/10 [06:27<15:04, 129.22s/it] 40%|████      | 4/10 [08:36<12:55, 129.19s/it] 50%|█████     | 5/10 [10:45<10:45, 129.16s/it] 60%|██████    | 6/10 [12:54<08:36, 129.15s/it] 70%|███████   | 7/10 [15:03<06:27, 129.13s/it] 80%|████████  | 8/10 [17:13<04:18, 129.14s/it] 90%|█████████ | 9/10 [19:22<02:09, 129.18s/it]100%|██████████| 10/10 [21:31<00:00, 129.18s/it]100%|██████████| 10/10 [21:31<00:00, 129.15s/it]
+end experiment :)

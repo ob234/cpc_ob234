@@ -1,0 +1,14 @@
+current_model: gpt2, timestamp: 1700709203
+  0%|          | 0/10 [00:00<?, ?it/s]/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 35, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 32, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 37, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 51, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 34, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+/users/ob234/.local/lib/python3.10/site-packages/transformers/generation/utils.py:1281: UserWarning: Input length of input_ids is 30, but `max_length` is set to 30. This can lead to unexpected behavior. You should consider increasing `max_new_tokens`.
+  warnings.warn(
+ 10%|█         | 1/10 [14:27<2:10:11, 867.91s/it] 20%|██        | 2/10 [28:46<1:54:58, 862.36s/it] 30%|███       | 3/10 [43:08<1:40:34, 862.03s/it] 40%|████      | 4/10 [57:08<1:25:21, 853.59s/it] 50%|█████     | 5/10 [1:11:36<1:11:34, 858.86s/it]

@@ -1,0 +1,7 @@
+index, timestamp, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], clocks.current.graphics [MHz]
+0, 2023/11/22 21:48:35.000, 24.38 W, 135 MHz, 1107 MHz, 135 MHz
+0, 2023/11/22 21:48:36.010, 24.37 W, 135 MHz, 1107 MHz, 135 MHz
+0, 2023/11/22 21:48:37.016, 24.27 W, 135 MHz, 1107 MHz, 135 MHz
+0, 2023/11/22 21:48:38.019, 35.47 W, 1245 MHz, 1107 MHz, 1245 MHz
+0, 2023/11/22 21:48:39.022, 35.38 W, 1245 MHz, 1107 MHz, 1245 MHz
+0, 2023/11/22 21:48:40.025, 35.39 W, 1245 MHz, 1107 MHz, 1245 MHz

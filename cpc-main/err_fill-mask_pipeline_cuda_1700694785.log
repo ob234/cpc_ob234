@@ -1,66 +1,0 @@
-Downloading builder script:   0%|          | 0.00/65.1k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 65.1k/65.1k [00:00<00:00, 670kB/s]
-Downloading metadata:   0%|          | 0.00/167k [00:00<?, ?B/s]Downloading metadata:  40%|███▉      | 66.6k/167k [00:00<00:00, 607kB/s]Downloading metadata: 100%|██████████| 167k/167k [00:00<00:00, 827kB/s] 
-Downloading readme:   0%|          | 0.00/56.3k [00:00<?, ?B/s]Downloading readme: 100%|██████████| 56.3k/56.3k [00:00<00:00, 637kB/s]
-Downloading data files:   0%|          | 0/2 [00:00<?, ?it/s]
-Downloading data:   0%|          | 0.00/1.85M [00:00<?, ?B/s][A
-Downloading data:   3%|▎         | 48.1k/1.85M [00:00<00:03, 459kB/s][A
-Downloading data:   8%|▊         | 151k/1.85M [00:00<00:02, 785kB/s] [A
-Downloading data:  27%|██▋       | 494k/1.85M [00:00<00:00, 1.98MB/s][A
-Downloading data:  94%|█████████▍| 1.74M/1.85M [00:00<00:00, 6.07MB/s][ADownloading data: 100%|██████████| 1.85M/1.85M [00:00<00:00, 4.50MB/s]
-Downloading data files:  50%|█████     | 1/2 [00:01<00:01,  1.22s/it]
-Downloading data:   0%|          | 0.00/87.8k [00:00<?, ?B/s][A
-Downloading data:  55%|█████▍    | 48.1k/87.8k [00:00<00:00, 478kB/s][ADownloading data: 100%|██████████| 87.8k/87.8k [00:00<00:00, 661kB/s]
-Downloading data files: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]Downloading data files: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]
-Extracting data files:   0%|          | 0/2 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 2/2 [00:00<00:00, 55.58it/s]
-Generating train split:   0%|          | 0/67389 [00:00<?, ? examples/s]Generating train split:   3%|▎         | 2261/67389 [00:00<00:02, 22551.79 examples/s]Generating train split:   7%|▋         | 4826/67389 [00:00<00:02, 24371.18 examples/s]Generating train split:  12%|█▏        | 8321/67389 [00:00<00:03, 17463.85 examples/s]Generating train split:  16%|█▌        | 10938/67389 [00:00<00:02, 19904.31 examples/s]Generating train split:  20%|█▉        | 13440/67389 [00:00<00:02, 21365.00 examples/s]Generating train split:  23%|██▎       | 15808/67389 [00:00<00:02, 22032.67 examples/s]Generating train split:  27%|██▋       | 18152/67389 [00:00<00:02, 22442.93 examples/s]Generating train split:  31%|███       | 20739/67389 [00:00<00:01, 23453.09 examples/s]Generating train split:  34%|███▍      | 23243/67389 [00:01<00:01, 23715.10 examples/s]Generating train split:  38%|███▊      | 25772/67389 [00:01<00:01, 24178.33 examples/s]Generating train split:  42%|████▏     | 28266/67389 [00:01<00:01, 24212.68 examples/s]Generating train split:  46%|████▌     | 30754/67389 [00:01<00:01, 24408.29 examples/s]Generating train split:  49%|████▉     | 33277/67389 [00:01<00:01, 24386.58 examples/s]Generating train split:  53%|█████▎    | 35828/67389 [00:01<00:01, 24716.64 examples/s]Generating train split:  59%|█████▊    | 39491/67389 [00:01<00:01, 24560.03 examples/s]Generating train split:  62%|██████▏   | 41967/67389 [00:01<00:01, 24612.42 examples/s]Generating train split:  68%|██████▊   | 45697/67389 [00:01<00:00, 24701.56 examples/s]Generating train split:  73%|███████▎  | 49415/67389 [00:02<00:00, 24728.60 examples/s]Generating train split:  77%|███████▋  | 51972/67389 [00:02<00:00, 24933.29 examples/s]Generating train split:  81%|████████  | 54674/67389 [00:02<00:00, 19211.16 examples/s]Generating train split:  85%|████████▍ | 57115/67389 [00:02<00:00, 20348.71 examples/s]Generating train split:  88%|████████▊ | 59637/67389 [00:02<00:00, 21507.35 examples/s]Generating train split:  92%|█████████▏| 62039/67389 [00:02<00:00, 22143.30 examples/s]Generating train split:  97%|█████████▋| 65482/67389 [00:02<00:00, 22426.96 examples/s]Generating train split: 100%|██████████| 67389/67389 [00:02<00:00, 22709.04 examples/s]
-Generating validation split:   0%|          | 0/993 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 993/993 [00:00<00:00, 19603.43 examples/s]
-Generating test split:   0%|          | 0/1497 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1497/1497 [00:00<00:00, 23502.29 examples/s]
-Generating challenge_train_sample split:   0%|          | 0/500 [00:00<?, ? examples/s]Generating challenge_train_sample split: 100%|██████████| 500/500 [00:00<00:00, 23867.62 examples/s]
-Generating challenge_validation_sample split:   0%|          | 0/500 [00:00<?, ? examples/s]Generating challenge_validation_sample split: 100%|██████████| 500/500 [00:00<00:00, 21708.52 examples/s]
-Generating challenge_test_scramble split:   0%|          | 0/500 [00:00<?, ? examples/s]Generating challenge_test_scramble split: 100%|██████████| 500/500 [00:00<00:00, 24489.71 examples/s]
-config.json:   0%|          | 0.00/616 [00:00<?, ?B/s]config.json: 100%|██████████| 616/616 [00:00<00:00, 2.80MB/s]
-sentencepiece.bpe.model:   0%|          | 0.00/5.07M [00:00<?, ?B/s]sentencepiece.bpe.model: 100%|██████████| 5.07M/5.07M [00:00<00:00, 8.49MB/s]sentencepiece.bpe.model: 100%|██████████| 5.07M/5.07M [00:00<00:00, 8.43MB/s]
-tokenizer.json:   0%|          | 0.00/9.10M [00:00<?, ?B/s]tokenizer.json: 100%|██████████| 9.10M/9.10M [00:00<00:00, 17.6MB/s]tokenizer.json: 100%|██████████| 9.10M/9.10M [00:00<00:00, 17.3MB/s]
-model.safetensors:   0%|          | 0.00/2.24G [00:00<?, ?B/s]model.safetensors:   0%|          | 10.5M/2.24G [00:00<02:47, 13.3MB/s]model.safetensors:   1%|          | 21.0M/2.24G [00:01<01:45, 21.1MB/s]model.safetensors:   1%|▏         | 31.5M/2.24G [00:01<01:24, 26.1MB/s]model.safetensors:   2%|▏         | 41.9M/2.24G [00:01<01:14, 29.4MB/s]model.safetensors:   2%|▏         | 52.4M/2.24G [00:01<01:09, 31.6MB/s]model.safetensors:   3%|▎         | 62.9M/2.24G [00:02<01:05, 33.1MB/s]model.safetensors:   3%|▎         | 73.4M/2.24G [00:02<01:03, 34.1MB/s]model.safetensors:   4%|▎         | 83.9M/2.24G [00:02<01:02, 34.7MB/s]model.safetensors:   4%|▍         | 94.4M/2.24G [00:03<01:01, 35.2MB/s]model.safetensors:   5%|▍         | 105M/2.24G [00:03<01:00, 35.6MB/s] model.safetensors:   5%|▌         | 115M/2.24G [00:03<00:59, 35.9MB/s]model.safetensors:   6%|▌         | 126M/2.24G [00:03<00:58, 36.0MB/s]model.safetensors:   6%|▌         | 136M/2.24G [00:04<00:58, 36.1MB/s]model.safetensors:   7%|▋         | 147M/2.24G [00:04<00:57, 36.2MB/s]model.safetensors:   7%|▋         | 157M/2.24G [00:04<00:57, 36.3MB/s]model.safetensors:   7%|▋         | 168M/2.24G [00:05<00:57, 36.3MB/s]model.safetensors:   8%|▊         | 178M/2.24G [00:05<00:56, 36.3MB/s]model.safetensors:   8%|▊         | 189M/2.24G [00:05<00:56, 36.3MB/s]model.safetensors:   9%|▉         | 199M/2.24G [00:05<00:56, 36.4MB/s]model.safetensors:   9%|▉         | 210M/2.24G [00:06<00:55, 36.4MB/s]model.safetensors:  10%|▉         | 220M/2.24G [00:06<00:55, 36.4MB/s]model.safetensors:  10%|█         | 231M/2.24G [00:06<00:55, 36.3MB/s]model.safetensors:  10%|█         | 231M/2.24G [00:06<00:59, 33.7MB/s]
-Traceback (most recent call last):
-  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 214, in <module>
-    main()
-  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 176, in main
-    pipe = load_pipeline(task=task_type, model=model_name, tokenizer=tokenizer, device=device)
-  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 20, in load_pipeline
-    pipe = pipeline(task=task, model=model, tokenizer=tokenizer, device=device)
-  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/__init__.py", line 870, in pipeline
-    framework, model = infer_framework_load_model(
-  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 269, in infer_framework_load_model
-    model = model_class.from_pretrained(model, **kwargs)
-  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 566, in from_pretrained
-    return model_class.from_pretrained(
-  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3037, in from_pretrained
-    resolved_archive_file = cached_file(pretrained_model_name_or_path, filename, **cached_file_kwargs)
-  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/utils/hub.py", line 430, in cached_file
-    resolved_file = hf_hub_download(
-  File "/users/ob234/.local/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
-    return fn(*args, **kwargs)
-  File "/users/ob234/.local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1461, in hf_hub_download
-    http_get(
-  File "/users/ob234/.local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 541, in http_get
-    for chunk in r.iter_content(chunk_size=DOWNLOAD_CHUNK_SIZE):
-  File "/users/ob234/.local/lib/python3.10/site-packages/requests/models.py", line 816, in generate
-    yield from self.raw.stream(chunk_size, decode_content=True)
-  File "/users/ob234/.local/lib/python3.10/site-packages/urllib3/response.py", line 934, in stream
-    data = self.read(amt=amt, decode_content=decode_content)
-  File "/users/ob234/.local/lib/python3.10/site-packages/urllib3/response.py", line 877, in read
-    data = self._raw_read(amt)
-  File "/users/ob234/.local/lib/python3.10/site-packages/urllib3/response.py", line 812, in _raw_read
-    data = self._fp_read(amt) if not fp_closed else b""
-  File "/users/ob234/.local/lib/python3.10/site-packages/urllib3/response.py", line 797, in _fp_read
-    return self._fp.read(amt) if amt is not None else self._fp.read()
-  File "/usr/lib/python3.10/http/client.py", line 466, in read
-    s = self.fp.read(amt)
-  File "/usr/lib/python3.10/socket.py", line 705, in readinto
-    return self._sock.recv_into(b)
-  File "/usr/lib/python3.10/ssl.py", line 1274, in recv_into
-    return self.read(nbytes, buffer)
-  File "/usr/lib/python3.10/ssl.py", line 1130, in read
-    return self._sslobj.read(len, buffer)
-KeyboardInterrupt

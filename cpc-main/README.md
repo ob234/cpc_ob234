@@ -51,10 +51,45 @@ python calc_emission_inference.py -device "cuda" -interface "manually-just-infer
 
 python calc_emission_inference.py -device "cuda" -interface "manually-just-inference-extract" -task_type "fill-mask" 
 
-
 ---- 
-
+```
 sudo apt-get upgrade 
 sudo apt-get update 
 sudo apt install python3-pip
 pip install -r requirements.txt 
+```
+----- 
+
+```
+python calc_emission_inference.py -device cuda -interface pipeline -task_type fill-mask
+python calc_emission_inference.py -device cuda -interface manually-just-inference -task_type fill-mask
+python calc_emission_inference.py -device cuda -interface manually-just-inference-extract -task_type fill-mask
+python calc_emission_inference.py -device cuda -interface manually-just-extract -task_type fill-mask
+python calc_emission_inference.py -device cuda -interface manually -task_type fill-mask
+python calc_emission_inference.py -device cuda -interface manually-just-data -task_type fill-mask
+
+python calc_emission_inference.py -device cpu -interface pipeline -task_type fill-mask
+python calc_emission_inference.py -device cpu -interface manually-just-inference -task_type fill-mask
+python calc_emission_inference.py -device cpu -interface manually-just-inference-extract -task_type fill-mask
+python calc_emission_inference.py -device cpu -interface manually-just-extract -task_type fill-mask
+python calc_emission_inference.py -device cpu -interface manually -task_type fill-mask
+python calc_emission_inference.py -device cpu -interface manually-just-data -task_type fill-mask
+```
+
+```
+python calc_emission_inference.py -device cuda -interface pipeline -task_type text-generation
+python calc_emission_inference.py -device cuda -interface manually-just-inference -task_type text-generation
+python calc_emission_inference.py -device cuda -interface manually-just-inference-extract -task_type text-generation
+python calc_emission_inference.py -device cuda -interface manually-just-extract -task_type text-generation
+python calc_emission_inference.py -device cuda -interface manually -task_type text-generation
+python calc_emission_inference.py -device cuda -interface manually-just-data -task_type text-generation
+
+python calc_emission_inference.py -device cpu -interface pipeline -task_type text-generation
+python calc_emission_inference.py -device cpu -interface manually-just-inference -task_type text-generation
+python calc_emission_inference.py -device cpu -interface manually-just-inference-extract -task_type text-generation
+python calc_emission_inference.py -device cpu -interface manually-just-extract -task_type text-generation
+python calc_emission_inference.py -device cpu -interface manually -task_type text-generation
+python calc_emission_inference.py -device cpu -interface manually-just-data -task_type text-generation
+```
+
+
