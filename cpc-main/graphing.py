@@ -83,8 +83,9 @@ def print_plot(invidia_smi_path, pyjoules_smi_path):
     plt.ylabel('power consumption [W]')
     plt.title('Power Consumption At Inference (BERT model)')
     plt.xticks(fontsize=8)
-    plt.savefig('Power_Consumption_At_Inference_BERT_model_gpu_nvidia-smi.png')
-    plt.show()
+    # plt.savefig("graphs/" + 'Power_Consumption_At_Inference_BERT_model_gpu_nvidia-smi.png')
+    plt.savefig("graphs/nvs/" + 'pc_inf_bert_gpu.png')
+    # plt.show()
 
     # ----------- data from pyjoules --------------
 
@@ -97,8 +98,9 @@ def print_plot(invidia_smi_path, pyjoules_smi_path):
     plt.ylabel('Energy consumption [uJ]')
     plt.title('Energy Consumption At Inference per Query (BERT model - GPU)')
     plt.xticks(fontsize=8)
-    plt.savefig('Energy_Consumption_At_Inference_per_query_BERT_model_gpu_pyjoules.png')
-    plt.show()
+    # plt.savefig("graphs/" + 'Energy_Consumption_At_Inference_per_query_BERT_model_gpu_pyjoules.png')
+    plt.savefig("graphs/pyj/" + 'ec_inf_pq_bert_gpu.png')
+    # plt.show()
 
     # plot_3
     plt.plot(fixed_timestamps_pyjoules[2:], cpu_energy_uJs_pyjoules[2:], color='blue', label='Line 1')
@@ -108,8 +110,9 @@ def print_plot(invidia_smi_path, pyjoules_smi_path):
     plt.ylabel('Energy consumption [uJ]')
     plt.title('Energy Consumption At Inference per Query (BERT model - CPU (BLUE) & WALL CPU (RED) & GPU (GREEN)')
     plt.xticks(fontsize=8)
-    plt.savefig('Energy_Consumption_At_Inference_per_query_BERT_model_cpu_&_wall_cpu_&_GPU_pyjoules.png')
-    plt.show()
+    # plt.savefig("graphs/" + 'Energy_Consumption_At_Inference_per_query_BERT_model_cpu_&_wall_cpu_&_GPU_pyjoules.png')
+    plt.savefig("graphs/pyj/" + 'ec_inf_pq_bert_cpugpu.png')
+    # plt.show()
 
     power_data_pyjoules = []
     for i in range(len(durations_pyjoules)):
@@ -120,8 +123,9 @@ def print_plot(invidia_smi_path, pyjoules_smi_path):
     plt.ylabel('power consumption [W]')
     plt.title('Power Consumption At Inference per Query (BERT model - GPU)')
     plt.xticks(fontsize=8)
-    plt.savefig('Power_Consumption_At_Inference_per_query_BERT_model_gpu_pyjoules.png')
-    plt.show()
+    # plt.savefig("graphs/" + 'Power_Consumption_At_Inference_per_query_BERT_model_gpu_pyjoules.png')
+    plt.savefig("graphs/pyj/" + 'pc_inf_pq_bert_gpu.png')
+    # plt.show()
 
     # ------------ combined power consumption ------------
     plt.plot(timestamps_nvidia, power_data_nvidia, color='blue', label='Line 1')
@@ -131,8 +135,9 @@ def print_plot(invidia_smi_path, pyjoules_smi_path):
     plt.ylabel('power consumption [W]')
     plt.title('Power Consumption At Inference per Query (BERT model - GPU)')
     plt.xticks(fontsize=8)
-    plt.savefig('Power_Consumption_At_Inference_pyjoules_&_nvidia_data_gpu_only.png')
-    plt.show()
+    # plt.savefig("graphs/" + 'Power_Consumption_At_Inference_pyjoules_&_nvidia_data_gpu_only.png')
+    plt.savefig("graphs/" + 'pc_inf_bert_gpu.png')
+    # plt.show()
 
     # ---------- check energy values ---------------
     start_time = timestamps_pyjoules[0]
@@ -145,8 +150,26 @@ def print_plot(invidia_smi_path, pyjoules_smi_path):
     print("energy_value_of_nvidia_sim", sum_energy, "J")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_plot("gpu_measurements.log", "pyjoules_measurements.log")
+import argparse 
+import os
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# if graphs doesnt exist, create folder
+if not os.path.exists("graphs"):
+    os.makedirs("graphs")
+    
+parser = argparse.ArgumentParser(
+    prog='calc_emission',
+    description='measure power consumption of GPU & CPU for NLP models',
+    epilog='Text')
+
+# user specifies:
+parser.add_argument('-device')  # GPU/CPU,
+parser.add_argument('-task_type')  # text-generation/fill-mask,
+parser.add_argument('-interface')  # how to run the task
+parser.add_argument('--test',
+                    action='store_true')  # whether they're in test mode
+args = parser.parse_args()
+
+# everything is at logs/tests/nvout_{device}_{task_type}_{interface}.log or pyj_ot_{device}_{interface}_{task_type}.log
+print_plot(f"logs/tests/nvout_{args.device}_{args.task_type}_{args.interface}.log",
+           f"logs/tests/pyj_out_{args.device}_{args.interface}_{args.task_type}.log")
