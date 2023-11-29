@@ -285,7 +285,7 @@ def main():
         sys.stderr.write(err_msg)
         sleep(2)
 
-        for _i in tqdm(range(10)):
+        for _i in tqdm(range(2)): # changed from 10 to 2
             if interface == "manually-just-inference":
                 query_just_inference(task_type, first_input_data_proc, model)
 
