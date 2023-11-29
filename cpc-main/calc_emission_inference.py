@@ -4,7 +4,7 @@ import argparse
 import logging
 import subprocess
 import sys
-import time
+import time, os
 from time import sleep
 from tqdm import tqdm
 import torch
@@ -188,22 +188,26 @@ def main():
   # interface options -> "pipline" , "manually"
 
   # ---------------- outputs ----------------
+  if not os.path.exists('logs'):
+    os.makedirs('logs')
+  # check if error logs exist
+  if not os.path.exists('error_logs'):
+    os.makedirs('error_logs')
   if args.test:  # if in test mode, it prints to console
+    if not os.path.exists('logs/tests/'):
+      os.makedirs('logs/tests/')
+    # check if error logs exist
+    if not os.path.exists('error_logs/tests/'):
+      os.makedirs('error_logs/tests/')
     print(
         "test mode, make sure output files are as expected before running script on models."
     )
-    # logs related to the gneeral execution of the script
-    output_filename = "pyjoules_output_test_" + str(round(
-        time.time())) + ".log"
-    # logs related to errors that occur during execution of the script
-    err_filename = "err_test_" + str(round(time.time())) + ".log"
+    output_filename = f'logs/tests/pyj_ot_{device}_{interface}_{task_type}.log'
+    err_filename = "error_logs/tests/pyj_ot_" + str(round(time.time())) + ".log"
 
   else:
-    output_filename = ("pyjoules_output_" + f"{task_type}_" + f"{interface}_" +
-                       f"{device}_" + f"{str(round(time.time()))}.log")
-
-    err_filename = ("err_" + f"{task_type}" + f"{interface}" + f"{device}" +
-                    f"{str(round(time.time()))}.log")
+    output_filename = f'logs/pyj_ot_{device}_{interface}_{task_type}.log'
+    err_filename = f'error_logs/pyj_ot_{device}_{interface}_{task_type}.log'
 
   # opens files in write mode, creates if it doesn't already exist
   output_file = open(output_filename, "w")
@@ -230,7 +234,9 @@ def main():
   subprocess.run(["pkill", "nvidia-smi"])
 
   # starts the logging of GPU utilization and power consumption detals
-  subprocess.Popen("./nvmodelprofile.sh", shell=True)  # place script here?
+  # subprocess.Popen("./nvmodelprofile.sh", shell=True)  # place script here?
+  # add three arguments to the script: device, task_type, interface
+  subprocess.Popen("./nvmodelprofile.sh", device, task_type, interface, shell=True)
 
   if args.test:
     tester_handler()  # isolates measurements
@@ -239,11 +245,6 @@ def main():
 
   # looping through models from the list
   for model_name in models_list:
-    # print("\n ------------------------------ current_model:", model_name, " ------------------------------\n")
-
-    # converts text into tokens, which are later converted to embeddings
-    # AutoTokenizer.from_pretrained() is a method from HF library
-    # loads a tokenizer that is appropriate to model_name (download or local)
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     # ready to use pipeline with high-level abstraction provided by HF
@@ -280,21 +281,6 @@ def main():
     # why is err_msg used for normal logging operations?
     err_msg = f"current_model: {model_name}, timestamp: {round(time.time())}\n"
     sys.stderr.write(err_msg)
-
-    # logger setup
-    # log_filename = f"model_logs_{round(time.time())}.log"
-    # logging.basicConfig(
-    #     level=logging.INFO,
-    #     format=
-    #     f'current_model: {model_name}, timestamp: {round(time.time())}\n',
-    #     handlers=[logging.FileHandler(log_filename),
-    #               logging.StreamHandler()])
-
-    # using logger instead of err_msg
-    # is this correct?
-    # logging.info(log_filename)
-
-    # why sleep(2) instead of tester_handler?
     sleep(2)
 
     for _i in tqdm(range(10)):
@@ -316,19 +302,14 @@ def main():
                     model_name)
 
           elif interface == "manually-just-data":
-            #sleep(0.01) #<-- why
-            #query_just_data: only preprocessing step
             query_just_data(tokenizer, task_type, input_data, device,
                             model_name)
 
           else:
-            #if interfaces don't match, it defaults to query with preloaded pipeline(pipe)
-            #which is a high-level abstraction for performing inference tasks from HF library
             query(pipe, task_type, tokenizer, input_data, model_name)
 
   err_msg = "end experiment :)"
   sys.stderr.write(err_msg)
-  #logging.info('end experiment :)')
   subprocess.Popen("./nvkillprocess.sh", shell=True)
 
 
