@@ -64,7 +64,9 @@ python calc_emission_inference.py -device "cuda" -interface "manually-just-infer
 sudo apt-get upgrade 
 sudo apt-get update 
 sudo apt install python3-pip
-pip install -r requirements.txt 
+pip install -r requirements.txt
+python -m pip install nvidia-smi
+#restart 
 ```
 ----- 
 
