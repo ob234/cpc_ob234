@@ -69,7 +69,7 @@ python -m pip install nvidia-smi
 #reboot  
 ```
 ----- 
-
+#get outputs
 ```
 python calc_emission_inference.py -device cuda -interface pipeline -task_type fill-mask
 python calc_emission_inference.py -device cuda -interface manually-just-inference -task_type fill-mask
@@ -103,6 +103,7 @@ python calc_emission_inference.py -device cpu -interface manually-just-data -tas
 ```
 
 --- 
+#graphing the outputs 
 
 ```
 python graphing.py -device cuda -interface pipeline -task_type fill-mask
