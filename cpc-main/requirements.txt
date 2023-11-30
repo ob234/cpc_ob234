@@ -10,3 +10,4 @@ argparse
 huggingface-hub
 matplotlib
 tqdm
+torch
