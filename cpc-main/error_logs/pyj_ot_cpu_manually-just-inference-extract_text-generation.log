@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 324, in <module>
+    main()
+  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 240, in main
+    subprocess.Popen("./nvmodelprofile.sh", device, task_type, interface, shell=True)
+  File "/usr/lib/python3.10/subprocess.py", line 780, in __init__
+    raise TypeError("bufsize must be an integer")
+TypeError: bufsize must be an integer

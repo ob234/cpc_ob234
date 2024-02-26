@@ -8,3 +8,10 @@ torch
 pynvml
 argparse
 huggingface-hub
+matplotlib
+tqdm
+torch
+pyJoules
+Datsets
+transformers
+pynvml
