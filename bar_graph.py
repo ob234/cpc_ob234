@@ -27,4 +27,3 @@ plt.title('CPU Power Consumption of Models at Inference')
 plt.xticks(rotation=45, ha="right")
 plt.tight_layout()  # Adjust the plot to ensure everything fits without overlapping
 plt.show()
-s
