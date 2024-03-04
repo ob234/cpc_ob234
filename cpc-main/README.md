@@ -1,9 +1,8 @@
 -------
 note:  
-* graph_cpu_01 - for testing purposes. works with: 
+* graph_cpu.py - for testing purposes. works with cpu logs: 
     python calc_emission_inference.py -device cpu -interface manually-just-inference-extract -task_type fill-mask
     python3 graph_cpu.py 'logs/tests/pyj_ot_cpu_manually-just-inference-extract_fill-mask.log'
-
 
 -------
 

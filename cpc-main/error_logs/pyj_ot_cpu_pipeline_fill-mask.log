@@ -1,0 +1,17 @@
+/users/ob234/.local/lib/python3.10/site-packages/datasets/load.py:1461: FutureWarning: The repository for gem contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/gem
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+current_model: xlm-roberta-large, timestamp: 1709508063
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [01:16<01:16, 76.17s/it]100%|██████████| 2/2 [02:25<00:00, 71.90s/it]100%|██████████| 2/2 [02:25<00:00, 72.54s/it]
+current_model: bert-large-uncased, timestamp: 1709508212
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:52<00:52, 52.90s/it]100%|██████████| 2/2 [01:44<00:00, 52.39s/it]100%|██████████| 2/2 [01:44<00:00, 52.47s/it]
+current_model: roberta-base, timestamp: 1709508319
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:26<00:26, 26.58s/it]100%|██████████| 2/2 [00:52<00:00, 25.98s/it]100%|██████████| 2/2 [00:52<00:00, 26.07s/it]
+current_model: bert-base-uncased, timestamp: 1709508374
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:25<00:25, 25.03s/it]100%|██████████| 2/2 [00:49<00:00, 24.95s/it]100%|██████████| 2/2 [00:49<00:00, 24.96s/it]
+current_model: distilbert-base-uncased, timestamp: 1709508426
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:15<00:15, 15.53s/it]100%|██████████| 2/2 [00:30<00:00, 15.45s/it]100%|██████████| 2/2 [00:30<00:00, 15.46s/it]
+current_model: albert-base-v2, timestamp: 1709508459
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:21<00:21, 21.05s/it]100%|██████████| 2/2 [00:41<00:00, 20.96s/it]100%|██████████| 2/2 [00:41<00:00, 20.97s/it]
+end experiment :)

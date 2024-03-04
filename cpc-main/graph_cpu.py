@@ -53,15 +53,34 @@ def extract_cpu_data_from_log(log_path):
         dram_0_energy.append(entry.get("dram_0", 0))
         dram_1_energy.append(entry.get("dram_1", 0))
 
-    # Convert timestamps to relative time starting from the first timestamp
     relative_timestamps = [t - timestamps[0] for t in timestamps]
     
     # import pdb; pdb.set_trace();
-    print(relative_timestamps)
+    #print(relative_timestamps)
     
     return relative_timestamps, package_0_energy, package_1_energy, dram_0_energy, dram_1_energy
 
 def plot_cpu_energy(log_path):
+    
+    base_name = os.path.basename(log_path)
+    name_without_extension = os.path.splitext(base_name)[0]
+    
+    # Initialize a counter for the filename
+    counter = 0
+    plot_filename = f"{name_without_extension}_energy_plot.png"
+    
+    # Define the directory where the plots will be saved
+    save_directory = "graphs"
+    
+    # Construct the full path to check for existence
+    save_path = os.path.join(save_directory, plot_filename)
+    
+    # Check if the file exists and increment the counter until an unused name is found
+    while os.path.exists(save_path):
+        counter += 1
+        plot_filename = f"{name_without_extension}_energy_plot_{counter}.png"
+        save_path = os.path.join(save_directory, plot_filename)
+    
     timestamps, package_0, package_1, dram_0, dram_1 = extract_cpu_data_from_log(log_path)
 
     plt.figure(figsize=(10, 6))
@@ -72,11 +91,12 @@ def plot_cpu_energy(log_path):
 
     plt.xlabel('Time (s)')
     plt.ylabel('Energy (uJ)')
-    plt.title('CPU Energy Consumption Over Time')
+    plt.title(f'CPU Energy/Time, {save_path}')
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig("graphs/cpu_energy_over_time.png")
+    plt.savefig(save_path)
+    print(f"Plot saved to {save_path}")
     plt.show()
 
 import argparse
@@ -92,3 +112,6 @@ parser.add_argument("log_path", help="Path to the log file containing CPU energy
 args = parser.parse_args()
 
 plot_cpu_energy(args.log_path)
+
+#filtered_data = [x for x in data if abs(x - np.mean(data)) < 4 * np.std(data)]
+
