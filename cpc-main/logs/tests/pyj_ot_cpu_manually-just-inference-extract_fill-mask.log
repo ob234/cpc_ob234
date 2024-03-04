@@ -1,0 +1,12 @@
+begin timestamp : 1709506082.2633193; tag : query_just_inference_extract; duration : 0.12611675262451172; package_0 : 1997371.0; package_1 : 6756819.0; dram_0 : 572098.0; dram_1 : 1241778.0
+begin timestamp : 1709506082.39014; tag : query_just_inference_extract; duration : 0.10273861885070801; package_0 : 2011103.0; package_1 : 6425215.0; dram_0 : 465104.0; dram_1 : 1087295.0
+begin timestamp : 1709506099.567368; tag : query_just_inference_extract; duration : 0.10005545616149902; package_0 : 1169797.0; package_1 : 4848864.0; dram_0 : 365716.0; dram_1 : 889145.0
+begin timestamp : 1709506099.6685479; tag : query_just_inference_extract; duration : 0.07377362251281738; package_0 : 1358090.0; package_1 : 4261219.0; dram_0 : 321224.0; dram_1 : 756263.0
+begin timestamp : 1709506109.230978; tag : query_just_inference_extract; duration : 0.04627799987792969; package_0 : 484191.0; package_1 : 1938654.0; dram_0 : 186124.0; dram_1 : 379945.0
+begin timestamp : 1709506109.2780201; tag : query_just_inference_extract; duration : 0.03832435607910156; package_0 : 447509.0; package_1 : 1874385.0; dram_0 : 161951.0; dram_1 : 355924.0
+begin timestamp : 1709506116.7974055; tag : query_just_inference_extract; duration : 0.04298686981201172; package_0 : 561583.0; package_1 : 1870357.0; dram_0 : 209686.0; dram_1 : 371362.0
+begin timestamp : 1709506116.841221; tag : query_just_inference_extract; duration : 0.03596663475036621; package_0 : 454894.0; package_1 : 1734492.0; dram_0 : 151592.0; dram_1 : 303659.0
+begin timestamp : 1709506122.7015352; tag : query_just_inference_extract; duration : 0.025567054748535156; package_0 : 269104.0; package_1 : 1078733.0; dram_0 : 91326.0; dram_1 : 212196.0
+begin timestamp : 1709506122.7279274; tag : query_just_inference_extract; duration : 0.01996016502380371; package_0 : 234435.0; package_1 : 961607.0; dram_0 : 76500.0; dram_1 : 173823.0
+begin timestamp : 1709506126.313733; tag : query_just_inference_extract; duration : 0.042984962463378906; package_0 : 468870.0; package_1 : 1453854.0; dram_0 : 170947.0; dram_1 : 314935.0
+begin timestamp : 1709506126.3574774; tag : query_just_inference_extract; duration : 0.03728818893432617; package_0 : 424315.0; package_1 : 1507503.0; dram_0 : 144585.0; dram_1 : 288099.0

@@ -232,16 +232,20 @@ def main():
     # subprocess to terminate processes and monitor the GPU
     # kills relevant processes that might interfere with energy measurement
     # subprocess.Popen("./nvkillprocess.sh", shell=True)
-    subprocess.run(["pkill", "nvidia-smi"])
+    if device == 'gpu' or device == 'cuda':
+        subprocess.run(["pkill", "nvidia-smi"])
 
-    # starts the logging of GPU utilization and power consumption detals
-    # subprocess.Popen("./nvmodelprofile.sh", shell=True)  # place script here?
-    # add three arguments to the script: device, task_type, interface
-    subprocess.Popen("./nvmodelprofile.sh", device, task_type, interface, shell=True)
+        # starts the logging of GPU utilization and power consumption detals
+        # subprocess.Popen("./nvmodelprofile.sh", shell=True)  # place script here?
+        # add three arguments to the script: device, task_type, interface
+        subprocess.Popen("./nvmodelprofile.sh", device, task_type, interface, shell=True)
 
     if args.test:
         tester_handler()  # isolates measurements
-        subprocess.Popen("./nvkillprocess.sh", shell=True)
+        if device == 'gpu' or device == 'cuda':
+            subprocess.Popen("./nvkillprocess.sh", shell=True)
+        #else:
+            # e.g. subprocess.ruh(["./cpu_cleanup.sh"]) 
         return 0
 
     # looping through models from the list
@@ -317,7 +321,7 @@ def main():
 
     err_msg = "end experiment :)"
     sys.stderr.write(err_msg)
-    subprocess.Popen("./nvkillprocess.sh", shell=True)
+    #subprocess.Popen("./nvkillprocess.sh", shell=True)
 
 
 if __name__ == "__main__":

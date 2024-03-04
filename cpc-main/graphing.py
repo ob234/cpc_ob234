@@ -141,7 +141,7 @@ def print_plot(invidia_smi_path, pyjoules_smi_path):
     plt.xlabel("Time [sec]")
     plt.ylabel("Energy consumption [uJ]")
     plt.title(
-        "Energy Consumption At Inference per Query (BERT model - CPU (BLUE) & WALL CPU (RED) & GPU (GREEN)"
+        "Energy Consumption At Inference per Query )" #(BERT model - CPU (BLUE) & WALL CPU (RED) & GPU (GREEN) 
     )
     plt.xticks(fontsize=8)
     # plt.savefig("graphs/" + 'Energy_Consumption_At_Inference_per_query_BERT_model_cpu_&_wall_cpu_&_GPU_pyjoules.png')

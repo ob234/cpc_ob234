@@ -1,8 +1,17 @@
-Traceback (most recent call last):
-  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 324, in <module>
-    main()
-  File "/users/ob234/cpc_ob234/cpc-main/calc_emission_inference.py", line 240, in main
-    subprocess.Popen("./nvmodelprofile.sh", device, task_type, interface, shell=True)
-  File "/usr/lib/python3.10/subprocess.py", line 780, in __init__
-    raise TypeError("bufsize must be an integer")
-TypeError: bufsize must be an integer
+/users/ob234/.local/lib/python3.10/site-packages/datasets/load.py:1461: FutureWarning: The repository for gem contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/gem
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+current_model: xlm-roberta-large, timestamp: 1709506080
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  7.90it/s]100%|██████████| 2/2 [00:00<00:00,  8.84it/s]100%|██████████| 2/2 [00:00<00:00,  8.67it/s]
+current_model: bert-large-uncased, timestamp: 1709506098
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  9.91it/s]100%|██████████| 2/2 [00:00<00:00, 11.40it/s]
+current_model: roberta-base, timestamp: 1709506107
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 23.21it/s]
+current_model: bert-base-uncased, timestamp: 1709506115
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 24.80it/s]
+current_model: distilbert-base-uncased, timestamp: 1709506121
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 42.35it/s]
+current_model: albert-base-v2, timestamp: 1709506124
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 24.44it/s]
+end experiment :)
