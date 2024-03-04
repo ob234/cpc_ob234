@@ -1,0 +1,12 @@
+begin timestamp : 1709514573.475819; tag : query_just_extract; duration : 0.0019931793212890625; package_0 : 21118.0; package_1 : 58960.0; dram_0 : 8216.0; dram_1 : 16494.0
+begin timestamp : 1709514573.4784229; tag : query_just_extract; duration : 0.0013637542724609375; package_0 : 19104.0; package_1 : 72326.0; dram_0 : 7100.0; dram_1 : 12622.0
+begin timestamp : 1709514576.8399544; tag : query_just_extract; duration : 0.0010623931884765625; package_0 : 11536.0; package_1 : 20325.0; dram_0 : 4376.0; dram_1 : 6487.0
+begin timestamp : 1709514576.8415482; tag : query_just_extract; duration : 0.0006506443023681641; package_0 : 10254.0; package_1 : 30945.0; dram_0 : 3840.0; dram_1 : 5570.0
+begin timestamp : 1709514579.7760088; tag : query_just_extract; duration : 0.0011720657348632812; package_0 : 11292.0; package_1 : 18128.0; dram_0 : 4361.0; dram_1 : 7252.0
+begin timestamp : 1709514579.7777188; tag : query_just_extract; duration : 0.0007255077362060547; package_0 : 0.0; package_1 : 0.0; dram_0 : 0.0; dram_1 : 5569.0
+begin timestamp : 1709514582.4088185; tag : query_just_extract; duration : 0.0012335777282714844; package_0 : 10926.0; package_1 : 11840.0; dram_0 : 4376.0; dram_1 : 3855.0
+begin timestamp : 1709514582.4106572; tag : query_just_extract; duration : 0.000682830810546875; package_0 : 0.0; package_1 : 0.0; dram_0 : 0.0; dram_1 : 3336.0
+begin timestamp : 1709514585.0119593; tag : query_just_extract; duration : 0.0012271404266357422; package_0 : 7385.0; package_1 : 29175.0; dram_0 : 3779.0; dram_1 : 5967.0
+begin timestamp : 1709514585.0138545; tag : query_just_extract; duration : 0.0007462501525878906; package_0 : 8606.0; package_1 : 23254.0; dram_0 : 3856.0; dram_1 : 6089.0
+begin timestamp : 1709514587.3878841; tag : query_just_extract; duration : 0.0011310577392578125; package_0 : 9034.0; package_1 : 26062.0; dram_0 : 3794.0; dram_1 : 3855.0
+begin timestamp : 1709514587.3895721; tag : query_just_extract; duration : 0.0006873607635498047; package_0 : 10376.0; package_1 : 24414.0; dram_0 : 3795.0; dram_1 : 3274.0

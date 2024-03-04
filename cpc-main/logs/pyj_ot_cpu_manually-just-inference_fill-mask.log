@@ -1,0 +1,12 @@
+begin timestamp : 1709514449.0585184; tag : query_just_inference; duration : 0.12351799011230469; package_0 : 6616011.0; package_1 : 2138361.0; dram_0 : 1289346.0; dram_1 : 670109.0
+begin timestamp : 1709514449.1829035; tag : query_just_inference; duration : 0.11133933067321777; package_0 : 6849165.0; package_1 : 2426263.0; dram_0 : 1200607.0; dram_1 : 625204.0
+begin timestamp : 1709514452.4927788; tag : query_just_inference; duration : 0.10415244102478027; package_0 : 4934802.0; package_1 : 2414057.0; dram_0 : 970020.0; dram_1 : 619634.0
+begin timestamp : 1709514452.5977955; tag : query_just_inference; duration : 0.07196855545043945; package_0 : 4083364.0; package_1 : 2019282.0; dram_0 : 728586.0; dram_1 : 435515.0
+begin timestamp : 1709514455.5136814; tag : query_just_inference; duration : 0.04368233680725098; package_0 : 1789791.0; package_1 : 718443.0; dram_0 : 414400.0; dram_1 : 257729.0
+begin timestamp : 1709514455.5582106; tag : query_just_inference; duration : 0.03574800491333008; package_0 : 1655574.0; package_1 : 650999.0; dram_0 : 344984.0; dram_1 : 215485.0
+begin timestamp : 1709514458.1733499; tag : query_just_inference; duration : 0.03908658027648926; package_0 : 1573360.0; package_1 : 594664.0; dram_0 : 347601.0; dram_1 : 216219.0
+begin timestamp : 1709514458.2131374; tag : query_just_inference; duration : 0.032240867614746094; package_0 : 1444759.0; package_1 : 562499.0; dram_0 : 311676.0; dram_1 : 181136.0
+begin timestamp : 1709514460.6700108; tag : query_just_inference; duration : 0.0424346923828125; package_0 : 1287655.0; package_1 : 684385.0; dram_0 : 335330.0; dram_1 : 250446.0
+begin timestamp : 1709514460.7131038; tag : query_just_inference; duration : 0.022713661193847656; package_0 : 821165.0; package_1 : 354370.0; dram_0 : 203505.0; dram_1 : 146039.0
+begin timestamp : 1709514463.0135453; tag : query_just_inference; duration : 0.03797650337219238; package_0 : 1213498.0; package_1 : 532592.0; dram_0 : 313191.0; dram_1 : 207759.0
+begin timestamp : 1709514463.0521727; tag : query_just_inference; duration : 0.03746342658996582; package_0 : 1308469.0; package_1 : 589232.0; dram_0 : 289522.0; dram_1 : 215928.0

@@ -2,16 +2,65 @@
 You can avoid this message in future by passing the argument `trust_remote_code=True`.
 Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
   warnings.warn(
-current_model: xlm-roberta-large, timestamp: 1709508063
-  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [01:16<01:16, 76.17s/it]100%|██████████| 2/2 [02:25<00:00, 71.90s/it]100%|██████████| 2/2 [02:25<00:00, 72.54s/it]
-current_model: bert-large-uncased, timestamp: 1709508212
-  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:52<00:52, 52.90s/it]100%|██████████| 2/2 [01:44<00:00, 52.39s/it]100%|██████████| 2/2 [01:44<00:00, 52.47s/it]
-current_model: roberta-base, timestamp: 1709508319
-  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:26<00:26, 26.58s/it]100%|██████████| 2/2 [00:52<00:00, 25.98s/it]100%|██████████| 2/2 [00:52<00:00, 26.07s/it]
-current_model: bert-base-uncased, timestamp: 1709508374
-  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:25<00:25, 25.03s/it]100%|██████████| 2/2 [00:49<00:00, 24.95s/it]100%|██████████| 2/2 [00:49<00:00, 24.96s/it]
-current_model: distilbert-base-uncased, timestamp: 1709508426
-  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:15<00:15, 15.53s/it]100%|██████████| 2/2 [00:30<00:00, 15.45s/it]100%|██████████| 2/2 [00:30<00:00, 15.46s/it]
-current_model: albert-base-v2, timestamp: 1709508459
-  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:21<00:21, 21.05s/it]100%|██████████| 2/2 [00:41<00:00, 20.96s/it]100%|██████████| 2/2 [00:41<00:00, 20.97s/it]
-end experiment :)
+current_model: xlm-roberta-large, timestamp: 1709514407
+  0%|          | 0/2 [00:00<?, ?it/s]  0%|          | 0/2 [00:06<?, ?it/s]
+Traceback (most recent call last):
+  File "/users/ob234/cpc_ob234-1/cpc-main/calc_emission_inference.py", line 328, in <module>
+    main()
+  File "/users/ob234/cpc_ob234-1/cpc-main/calc_emission_inference.py", line 320, in main
+    query(pipe, task_type, tokenizer, input_data, model_name)
+  File "/users/ob234/.local/lib/python3.10/site-packages/pyJoules/energy_meter.py", line 296, in wrapper_measure
+    val = func(*args, **kwargs)
+  File "/users/ob234/cpc_ob234-1/cpc-main/calc_emission_inference.py", line 93, in query
+    curr_query = pipe(processed_input)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/fill_mask.py", line 270, in __call__
+    outputs = super().__call__(inputs, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1196, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1203, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1102, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pipelines/fill_mask.py", line 127, in _forward
+    model_outputs = self.model(**model_inputs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 1092, in forward
+    outputs = self.roberta(
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 837, in forward
+    encoder_outputs = self.encoder(
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 525, in forward
+    layer_outputs = layer_module(
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 456, in forward
+    layer_output = apply_chunking_to_forward(
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/pytorch_utils.py", line 237, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 469, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/transformers/models/xlm_roberta/modeling_xlm_roberta.py", line 380, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/users/ob234/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

@@ -191,16 +191,16 @@ def main():
     if not os.path.exists("error_logs"):
         os.makedirs("error_logs")
     if args.test:  # if in test mode, it prints to console
-        if not os.path.exists("logs/tests/"):
-            os.makedirs("logs/tests/")
+        if not os.path.exists("logs/"):
+            os.makedirs("logs/")
         # check if error logs exist
-        if not os.path.exists("error_logs/tests/"):
-            os.makedirs("error_logs/tests/")
+        if not os.path.exists("error_logs/"):
+            os.makedirs("error_logs/")
         print(
             "test mode, make sure output files are as expected before running script on models."
         )
-        output_filename = f"logs/tests/pyj_ot_{device}_{interface}_{task_type}.log"
-        err_filename = "error_logs/tests/pyj_ot_" + str(round(time.time())) + ".log"
+        output_filename = f"logs/pyj_ot_{device}_{interface}_{task_type}.log"
+        err_filename = "error_logs/pyj_ot_" + str(round(time.time())) + ".log"
 
     else:
         output_filename = f"logs/pyj_ot_{device}_{interface}_{task_type}.log"
